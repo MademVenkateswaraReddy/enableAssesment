@@ -1,0 +1,191 @@
+.navbar-brand {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.nav-item a {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.header-container {
+    text-align: center;
+    margin-top: 100px;
+    padding: 70px;
+    border: 2px solid red;
+    border-radius: 10px;
+    height: 30vh;
+    background: #000;
+    color: #e5e5e5;
+}
+
+.header-container h1 {
+    font-size: 120px;
+}
+
+.header-container p {
+    font-size: 30px;
+    color: blue;
+    margin: 0 500px;
+    border-radius: 10px;
+    animation: hospFrame 4s infinite;
+}
+
+.form-container {
+    margin: 3rem 20rem;
+    padding: 20px;
+    background: blueviolet;
+    border-radius: 20px;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+form {
+    border: 2px solid red;
+    border-radius: 30px;
+    margin: 5rem 24rem;
+    padding: 20px 80px;
+    width: 30rem;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.reg-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40rem;
+    margin-left: 18rem;
+}
+.reg-form label{
+    color: #000;
+}
+.reg-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.reg-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+@keyframes hospFrame {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blueviolet;
+    }
+
+    75% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+
+/* responsiveness for ipad screens */
+@media only screen and (max-width:1100px) {
+    .header-container {
+        margin-top: 100px;
+        padding: 30px;
+        border: 2px solid red;
+        border-radius: 10px;
+        height: 30vh;
+        background: #000;
+        color: #e5e5e5;
+    }
+    
+    .header-container h1 {
+        font-size: 60px;
+    }
+    
+    .header-container p {
+        font-size: 15px;
+        color: blue;
+        margin: 50px 100px;
+        border-radius: 10px;
+        animation: hospFrame 4s infinite;
+    }
+    
+    .form-container {
+        margin: 3rem 10rem;
+    }
+       
+    form {
+        margin: 5rem 3rem;
+        padding: 20px 80px;
+        width: 30rem;
+        background: #000;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .reg-form {        
+        width: 32rem;
+        margin-left: 2rem;
+    }   
+}
+
+/* for very small screens */
+
+@media only screen and (max-width:720px) {
+
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .header-container p {
+        font-size: 15px;
+        color: blue;
+        margin: 10px 100px 80px 100px;
+        border-radius: 10px;
+       
+    }
+    
+    .form-container {
+        margin: 1rem 3rem;
+    }
+       
+    form {
+        margin: 5rem 0.1rem;
+        padding: 20px 50px;
+        width: 30rem;
+        background: #000;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .reg-form {        
+        width: 26rem;
+        margin-left: 2rem;
+    }   
+}
